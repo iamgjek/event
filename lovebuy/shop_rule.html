@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <link rel="icon" href="images/favicon.jpg">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fs.selecter.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+  </head>
+  <body>
+    <div class="container wrapper text-root">
+      <div class="header">
+        <div class="col-md-12">
+          <div class="logo col-md-4">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>單筆消費滿490免運費喔！</p>
+          </div><!-- /.logo -->
+
+          <div class="col-md-8 menba">
+            <ul>
+              <li><a href="member_signin.html"><span class="ico-arrow"></span>登入</a></li>
+              <li><a href="member_signup_1.html"><span class="ico-arrow"></span>加入會員</a></li>
+              <!-- 
+              <a href="#" class="active"><li><span class="ico-arrow"></span>登出</li></a>
+              <a href="member_center.html" class="active"><li><span class="ico-arrow"></span>會員專區</li></a>
+               -->
+              <li><a href="shop_cart.html" class="cart"><span class="ico-arrow"></span>購物車 (10)</a></li>
+              <li><input type="text" value="" placeholder="站內搜尋"><input type="submit" value=""></li>
+            </ul>
+          </div><!-- /.menba -->
+
+        </div>
+
+        <div class="cart-hover" style="display:none">
+          <div class="triangle-top"></div>
+          <div class="cart-content">
+            <table>
+              <tr>
+                <td>商品數量</td>
+                <td class="text-right text-form">999</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr>
+                <td>合計金額</td>
+                <td class="text-right text-form">$299,990</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr class="btn">
+                <td colspan="2" class="text-center"><button type="button" class="btn btn-dark"><span class="ico-cart"></span>前往結帳</button></td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- /.cart-hover -->
+
+      </div><!-- /.header -->
+
+      <div id="cssmenu">
+      <ul>
+         <li class="cate-1 cate"><a href="#"><p class="hide-text">清潔日用</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>家用清潔用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>掃把、拖把系列</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-2 cate"><a href="#"><p class="hide-text">品牌家電</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活家電</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>台熱牌系列</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>阿波羅保險箱</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>歐蘭特曬衣架</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-3 cate"><a href="#"><p class="hide-text">生活用品</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活雜貨專區</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-4 cate"><a href="#"><p class="hide-text">傢俱寢飾</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>客廳寢室家具</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-5 cate"><a href="#"><p class="hide-text">運動戶外</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>戶外用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>戶外旅行</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-6 cate"><a href="#"><p class="hide-text">居家收納</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>收納箱、袋、架</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>隨手貼、配件</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>無痕掛勾、配件</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-7 cate"><a href="#"><p class="hide-text">餐廚/衛浴</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>各類功能杯壺</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>廚房用品、器具</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>購物車、環保袋</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>刀具、砧板、刨削器</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-8 cate"><a href="#"><p class="hide-text">佈置/園藝</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>壁貼、窗貼</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-9 cate"><a href="#"><p class="hide-text">特賣專區</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>限時預購專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>清倉特賣專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>佰元有找專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>超值福利品區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>本月買一送一</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>加一元多一件</span></a></li>
+            </ul>
+         </li>
+      </ul>
+      </div><!-- /.cssmenu -->
+
+      <div class="col-md-12">
+        <div class="ttl">
+          <ol class="breadcrumb">
+            <li class="1st">
+              <a href="#">購物需知</a>
+            </li>
+            <li class="home"><a href="index.html"><p class="hide-text">home</p></a></li>
+          </ol>
+        </div><!-- /.ttl -->
+        <div class="rule">
+          <div class="col-md-12">
+            <div class="panel">
+                <h1><span class="ico-recycle"></span> 退貨需知</h1>
+                <div class="panel-body">
+                  <p><span class="ico-dot"></span>商品可能因拍攝產生色差，請依實際供貨樣式為準。</p>
+                  <p><span class="ico-dot"></span>商品如經拆封使用或拆解以致缺乏完整性及失去再販售價值時，將會酌收整新費用。</p>
+                  <p><span class="ico-dot"></span>影音僅提供產品使用操作參考，影片產品內容物不代表實際出貨物，商品依實際供貨樣式為準。</p>
+                  <p><span class="ico-dot"></span>耗材及個人衛生用品等，一經拆封即無法回復原狀之商品，在不確定是否要辦理退貨以前，請勿拆封使用。</p>
+                  <p><span class="ico-dot"></span>商品到貨享十天猶豫期之權益（注意！鑑賞期非試用期），辦理退貨商品必須是全新狀態且包裝完整，否則將會影響退貨權限。</p>
+                  <p><span class="ico-dot"></span>商品於出貨前將會予以測試，確保功能正常並且全程錄影存證，如辦理退貨以前，請勿拆封使用，包裝附件(內容物、贈品等)以實際商品檢附為主。</p>
+                  <p><span class="ico-dot"></span>依照消費者保護法規定，消費者均享有產品到貨猶豫期之權益，但猶豫期並非試用期，故退回產品必須恢復原狀且包裝完整
+(保持產品、附件、包裝、廠商紙箱及所有附隨文件或資料之完整性)，否則將會酌收整新費用！</p>
+                </div>
+            </div><!-- /.panel -->
+            <div class="panel">
+                <h1><span class="ico-delivery"></span> 運送服務</h1>
+                <div class="panel-body">
+                  <p><span class="ico-dot"></span>我們所提供的產品配送區域範圍目前僅限台灣本島。</p>
+                  <p><span class="ico-dot"></span>我們將於完成收款確認後，一般在訂單確認後五天內(不含例假日)將貨品運送到指定地點（預購、可客製化商品除外）。</p>
+                  <p><span class="ico-dot"></span>特殊產品一經安裝，不得退貨，選購前請先自行量測使用範圍區域之尺寸，確定無誤後再進行選購，以免發生尺寸不合之情況。</p>
+                  <p><span class="ico-dot"></span>針對大型商品(包括：大型家電、曬衣機、保險箱...等)，我們將於完成收款確認後，兩天內〈不含例假日〉將會有專人與您確認相關配送細節等的聯繫。偏遠地區若無法配送，廠商將保留出貨與否的權利。</p>
+                </div>
+            </div><!-- /.panel -->
+            <div class="panel">
+                <h1><span class="ico-dollor"></span> 紅利點數注意事項</h1>
+                <div class="panel-body">
+                  <h2><span class="btn btn-white brd-666 text-lg">獲得規則</span></h2>
+                  <p><span class="ico-dot"></span>本站會員在每次購物均會獲得紅利點數，並可累計使用。</p>
+                  <p><span class="ico-dot"></span>每滿100 元可獲得1點，滿200元可以獲得2點。</p>
+                  <p><span class="ico-dot"></span>紅利點數的獲得並不包含運費。</p>
+                  <p><span class="ico-dot"></span>每1點紅利可折抵購物金1元。（不可折抵運費）</p>
+                  <div class="sp">
+                    <img src="images/gf.jpg">
+                    <div class="sp01">假設您購買了兩樣商品<br>各為200元 與300元<br>運費100元</div>
+                    <div class="sp02">店家分2次出貨</div>
+                    <div class="sp03">在店家出貨前<br>您取消了200元這項商品</div>
+                    <div class="sp04">各獲得2點與3點</div>
+                    <div class="sp05">您可獲得3點</div>
+                  </div>
+                  <p><span class="ico-dot"></span>出貨日/超商取貨日後10天，系統會自動將紅利點數存入「會員帳戶」內，存入後隔日即可折抵使用。有效期限為45天。登入會員後點選頁面最上方的「會員專區」，進入後點選「紅利點數 > 查詢」可確認您紅利的最新狀況。</p>
+                  <blockquote>
+                    <p class="text-bold">[例]：</p>
+                    <p>假設您於1/1購買商品並且付款完成，店家於1/2出貨，則1/11_23:59:59前，您可以透過「訂單查詢」申請退貨。若您未申請退貨，系統將於1/12賦予會員紅利點數。1/13生效可使用，該筆紅利則可存放至2/25 23:59:59前。</p>
+                  </blockquote>
+                  <p><span class="ico-dot"></span>結帳時，會員帳戶內已累積的有效點，會員可以選擇 ”使用 或 不使用”。</p>
+                  <p><span class="ico-dot"></span>每1點紅利可折抵購物金1元（不可折抵運費），超商取貨付款有基本折抵限制，現金必須給付60元。</p>
+                  <blockquote>
+                    <p><span class="text-bold">[例]：</span>超商取貨付款商品金額100元，顧客點數有100點，但僅能使用積點40點，現金需負擔60元商品金額，帳戶會剩60點。</p>
+                  </blockquote>
+                  <p><span class="ico-dot"></span>多次消費產生的點在有效期間內，可以累積使用，一起折抵商品金額(先到期點數先折抵使用)。</p>
+                  <p><span class="ico-dot"></span>紅利點數折抵以1萬元為上限，但折抵後購物金額（不含運費）至少為 1元結帳，未用完點數會保留，在點數有效期內均可消費抵用。</p>
+                  <blockquote>
+                    <p><span class="text-bold">[例]：</span>商品金額90元，您共有紅利點100點，系統將自動計算以89點折抵，購物金額（不含運費）為1元，帳戶剩下紅利點11點。</p>
+                  </blockquote>
+                  <p><span class="ico-dot"></span>紅利點數一個月最多者抵三次為上限。</p>
+                  <p><span class="ico-dot"></span>紅利點數有效期限為45天，須於到期日前使用完畢，失效後無法折抵，亦無法回補點數。</p>
+                  <p><span class="ico-dot"></span>紅利點數可以與店家內所有優惠同時使用，也可以與信用卡紅利點數一同折抵消費金額。</p>
+                  <h2><span class="btn btn-white brd-666 text-lg">退貨積點回補</span></h2>
+                  <p><span class="ico-dot"></span>如果您的交易取消或是退貨完成後，該筆訂單折抵的點，將會在取消或是退貨完成後隔日自動回補至您的會員帳戶。</p>
+                  <p><span class="ico-dot"></span>點數回補後於隔日開始生效，可使用於下一次的消費。</p>
+                  <p><span class="ico-dot"></span>回補點數時，將以使用在同一筆訂單的點，如點過期失效後無法回補點數，未到期的會回補給會員。</p>
+                  <blockquote>
+                    <p class="text-bold">[例]：</p>
+                    <p>例如同一筆有使用兩筆點數：3點（9/18 到期）、7點（10/10 到期）若您於9/15取消訂單，退貨完成後為9/19則系統於9/20回補7點，到期日為10/10。</p>
+                  </blockquote>
+                </div>
+            </div><!-- /.panel -->
+          </div>
+        </div>
+      </div><!-- /.col-md-12 -->
+
+      <div class="scroll-top row"><a href="#"><span class="ico-top"></span></a></div>
+      <div class="footer">
+        <div class="container">
+          <div class="col-md-6 social">
+            <div class="col-md-12">
+              <div class="col-md-5 social-fb">
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2F%25E7%25BE%258E%25E5%259C%2596%25E6%2597%25A5%25E5%25A0%25B1%2F215949168559902&amp;width=&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=545795565524196" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:62px;" allowTransparency="true"></iframe>
+              </div>
+              <div class="col-md-7 social-other">
+                  <div class="social-goo">
+                  <!-- g+ -->
+                  <script src="https://apis.google.com/js/platform.js" async defer>
+                    {lang: 'zh-TW'}
+                  </script>
+                  <div class="g-plusone" data-size="medium" data-annotation="none" data-href="http://www.mess-book.com"></div>
+                  </div>
+                  <div class="social-weibo">
+                  <!-- weibo -->
+                  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+                  <wb:share-button addition="simple" type="button"></wb:share-button>
+                  </div>
+                  <div class="social-twitter">
+                  <!-- twitter -->
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  </div>
+                  <div class="ssl"><img src="images/ssl.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"><a href="#"><img class="featurette-image" data-src="holder.js/465x150/auto" alt=""></a></div>
+        </div>
+        <div class="bot2 col-md-12">
+          <h5><a href="store.html">實體銷售</a>　|　<a href="report.html">商品專利檢驗報告</a>　|　<a href="shop_rule.html">購物需知</a>　|　<a href="privacy_policy.html">隱私權聲明</a>　|　<a href="support_1.html">廠商合作</a>　|　<a href="career.html">人才招募</a></h5>
+          <p>Copyright &#169; 2014 lovebuy愛購資訊股份有限公司 ALL RIGHTS RESERVED</p>
+        </div>
+      </div><!-- /.footer -->
+
+      <div class="sideTag">
+        <ul>
+          <li class="tag-1"><a href="about.html"><p class="hide-text">關於愛購</p></a></li>
+          <li class="tag-2"><a href="video.html"><p class="hide-text">影片專區</p></a></li>
+          <li class="tag-3"><a href="faq.html"><p class="hide-text">FAQ</p></a></li>
+          <li class="tag-4"><a href="contact_1.html"><p class="hide-text">聯絡我們</p></a></li>
+          <li class="tag-5"><a href="edm.html"><p class="hide-text">電子報</p></a></li>
+        </ul>
+      </div><!-- /.sideTag -->
+
+    </div><!-- /.wrapper -->
+
+    <div class="adBnr">
+      <div><span class="Bnr-close"></span><a href="#" target="_blank"><img class="featurette-image" data-src="holder.js/87x250/auto" alt=""></a></div>
+    </div><!-- /.adBnr -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/docs.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    </script>
+  </body>
+</html>

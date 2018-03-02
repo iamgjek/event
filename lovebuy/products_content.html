@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <link rel="icon" href="images/favicon.jpg">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fs.selecter.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+  </head>
+  <body>
+    <div class="container wrapper text-root">
+      <div class="header">
+        <div class="col-md-12">
+          <div class="logo col-md-4">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>單筆消費滿490免運費喔！</p>
+          </div><!-- /.logo -->
+
+          <div class="col-md-8 menba">
+            <ul>
+              <li><a href="member_signin.html"><span class="ico-arrow"></span>登入</a></li>
+              <li><a href="member_signup_1.html"><span class="ico-arrow"></span>加入會員</a></li>
+              <!-- 
+              <a href="#" class="active"><li><span class="ico-arrow"></span>登出</li></a>
+              <a href="member_center.html" class="active"><li><span class="ico-arrow"></span>會員專區</li></a>
+               -->
+              <li><a href="shop_cart.html" class="cart"><span class="ico-arrow"></span>購物車 (10)</a></li>
+              <li><input type="text" value="" placeholder="站內搜尋"><input type="submit" value=""></li>
+            </ul>
+          </div><!-- /.menba -->
+
+        </div>
+
+        <div class="cart-hover" style="display:none">
+          <div class="triangle-top"></div>
+          <div class="cart-content">
+            <table>
+              <tr>
+                <td>商品數量</td>
+                <td class="text-right text-form">999</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr>
+                <td>合計金額</td>
+                <td class="text-right text-form">$299,990</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr class="btn">
+                <td colspan="2" class="text-center"><button type="button" class="btn btn-dark"><span class="ico-cart"></span>前往結帳</button></td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- /.cart-hover -->
+
+      </div><!-- /.header -->
+
+      <div id="cssmenu">
+      <ul>
+         <li class="cate-1 cate"><a href="#"><p class="hide-text">清潔日用</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>家用清潔用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>掃把、拖把系列</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-2 cate"><a href="#"><p class="hide-text">品牌家電</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活家電</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>台熱牌系列</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>阿波羅保險箱</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>歐蘭特曬衣架</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-3 cate"><a href="#"><p class="hide-text">生活用品</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活雜貨專區</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-4 cate"><a href="#"><p class="hide-text">傢俱寢飾</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>客廳寢室家具</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-5 cate"><a href="#"><p class="hide-text">運動戶外</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>戶外用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>戶外旅行</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-6 cate"><a href="#"><p class="hide-text">居家收納</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>收納箱、袋、架</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>隨手貼、配件</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>無痕掛勾、配件</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-7 cate"><a href="#"><p class="hide-text">餐廚/衛浴</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>各類功能杯壺</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>廚房用品、器具</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>購物車、環保袋</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>刀具、砧板、刨削器</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-8 cate"><a href="#"><p class="hide-text">佈置/園藝</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>壁貼、窗貼</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-9 cate"><a href="#"><p class="hide-text">特賣專區</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>限時預購專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>清倉特賣專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>佰元有找專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>超值福利品區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>本月買一送一</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>加一元多一件</span></a></li>
+            </ul>
+         </li>
+      </ul>
+      </div><!-- /.cssmenu -->
+
+      <div class="col-md-12">
+        <div class="ttl">
+          <ol class="breadcrumb">
+            <li class="1st">
+              <a href="#">清潔日用</a>
+            </li>
+            <li class="active">家用清潔用品</li>
+            <li class="home"><a href="index.html"><p class="hide-text">home</p></a></li>
+          </ol>
+        </div><!-- /.ttl -->
+        <div class="item">
+          <div class="item-title col-md-12 nowrap">
+            <span class="ico-tag-pos"><span class="ico-tag-new"></span><span class="ico-tag-pre"></span><span class="ico-tag-custom"></span></span>【快樂家】新一代拉拉蔬果調理器新一代拉拉蔬果調理器新一代拉拉蔬果調理器新一代拉拉蔬果調理器
+          </div><!-- /.item-title -->
+          <div class="item-content col-md-12">
+            <div class="col-md-9">
+              <div class="productsBnr">
+                <div class="products-loop">
+                  <div class="zoom">
+                    <a href="#"><img src="images/zoom-1.jpg" alt=""></a>
+                  </div>
+                  <div class="zoom">
+                    <a href="#"><img src="images/zoom-1.jpg" alt=""></a>
+                  </div>
+                </div><!-- /.products-loop -->
+              </div><!-- /.products-box -->
+              <div class="products-info">
+                <div class="ico-intro"><p class="hide-text">商品介紹</p></div>
+                <p>《新一代拉拉蔬果調理器》 延續第一代體積輕巧、免插電、配件簡易...等優點，另外增加了更實用的設計。<br>新增安全卡榫，蓋上後旋轉<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliqui<br>p ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="ico-description"><p class="hide-text">特色敘述</p></div>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+                  <li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</li>
+                  <li>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li>
+                  <li>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</li>
+                  <li>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</li>
+                  <li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                </ul>
+                <div class="ico-notice"><p class="hide-text">注意事項</p></div>
+                <ul>
+                  <li>注意事項說明一。</li>
+                  <li>也可以填入其他注意事項二。</li>
+                  <li>不一定只有三行而以，也可以多條列在這裡。</li>
+                </ul>
+                <div class="video-box">
+                  <div class="col-md-4">
+                    <div class="img">
+                      <a id="fancybox-manual-a" href="javascript:;"><img class="featurette-image" data-src="holder.js/220x150/auto" alt="">
+                      <div class="link">調理器介紹</div><img class="mv" src="images/mv.png"></a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="img">
+                      <a id="fancybox-manual-b" href="javascript:;"><img class="featurette-image" data-src="holder.js/220x150/auto" alt="">
+                      <div class="link">作出美味好料理 I</div><img class="mv" src="images/mv.png"></a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="img">
+                      <a id="fancybox-manual-c" href="javascript:;"><img class="featurette-image" data-src="holder.js/220x150/auto" alt="">
+                      <div class="link">作出美味好料理 II</div><img class="mv" src="images/mv.png"></a>
+                    </div>
+                  </div>
+                </div><!-- /.video-box -->
+                <div class="ico-detail"><p class="hide-text">商品細節</p></div>
+                <table>
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <td>品名</td>
+                      <td>【快樂家】新一代拉拉蔬果調理器</td>
+                    </tr>
+                    <tr>
+                      <td>配件</td>
+                      <td>手拉式上蓋、保鮮上蓋、容器主體、刮勺、攪拌輔助器、刀片組+刀片收納容器、攪拌器、瀝水籃、食譜</td>
+                    </tr>
+                    <tr>
+                      <td>尺寸</td>
+                      <td>14x14x14cm-含外包裝(±5%)</td>
+                    </tr>
+                    <tr>
+                      <td>重量</td>
+                      <td>580g(±5%) </td>
+                    </tr>
+                    <tr>
+                      <td>材質</td>
+                      <td>手拉式上蓋-ABS+棉繩；保鮮上蓋-PS；容器主體-PC；打蛋器、瀝水籃、攪拌器-PP；刀片輔助器、刀片組+刀片收納容器-不鏽鋼刀片、PP</td>
+                    </tr>
+                    <tr>
+                      <td>產地</td>
+                      <td>中國</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>備註</td>
+                      <td><a href="#">SGS檢測報告</a><br><a href="#">新型專利認證</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div><!-- /.products-info -->
+            </div><!-- /.col-md-9 -->
+            <div class="col-md-3">
+              <div class="aside">
+                <div class="social-other">
+                  <img class="featurette-image" data-src="holder.js/226x30/auto" alt="Social plugin">
+                </div>
+                <hr>
+                <label class="text-bold">商品編號<span>HL9020123-09392</span></label>
+                <label class="text-bold">建議售價<span>$999,999元</span></label>
+                <h3 class="text-form"><span class="sales">84</span><span class="dallor-sign-start">$</span>914,874<span class="dallor-sign-end">元</span></h3>
+                <p class="exchage-price"> [ 人民幣：999,999 ]</p>
+                <hr>
+                <label class="text-bold">選擇規格</label>
+                <select name="selecter_basic" class="selecter_basic">
+                  <option>綠色 單件組</option>
+                  <option>xx色 單件組</option>
+                  <option>oo色 單件組</option>
+                  <option>yy色 單件組</option>
+                </select>
+                <label class="text-bold">選擇數量</label>
+                <select name="selecter_basic" class="selecter_basic">
+                  <option selected="">10</option>
+                  <option>9</option>
+                  <option>8</option>
+                  <option>7</option>
+                  <option>6</option>
+                  <option>5</option>
+                  <option>4</option>
+                  <option>3</option>
+                  <option>2</option>
+                  <option>1</option>
+                </select>
+                <a href="#" class="btn btn-lg btn-dark btn-block addToList"><span class="ico-basket"></span>放入購物車</a>
+                <a href="#" class="btn btn-lg btn-lightbrown btn-block"><span class="ico-mail"></span>貨到通知我</a>
+                <a href="#" class="btn btn-lg btn-blue btn-block"><span class="ico-basket"></span>預購此商品</a>
+                <hr>
+                <div class="btn-group btn-block">
+                  <a href="#" class="btn btn-white"><span class="ico-star"></span>加入清單</a>
+                  <a href="#" class="btn btn-white"><span class="ico-chat"></span>對此商品發問</a>
+                </div>
+                <div class="nav-hor pay_method">
+                <ul>
+                  <li>付款方式<span class="ico-add"></span>
+                    <ul class="nav-hor-sub">
+                      <a href="#"><li><span class="ico-store"></span><span class="text-red text-bold text-md">超商取貨付款</span><br>全家、萊爾富、OK取貨付款，將酌收60元運費。若單筆購物滿 490 元，即享有免運費優惠。</li></a>
+                      <a href="#"><li><span class="ico-tv"></span><span class="text-red text-bold text-md">超商付款不取貨</span><br>全家、萊爾富、OK、7-11付款</li></a>
+                      <a href="#"><li><span class="ico-atm"></span><span class="text-red text-bold text-md">網路銀行轉帳</span><br>將酌收60元運費。若單筆購物滿 490 元，即享有免運費優惠。</li></a>
+                      <a href="#"><li><span class="ico-card"></span><span class="text-red text-bold text-md">信用卡線上刷卡</span><br>宅配到府，將酌收80元運費。若單筆購物滿 490 元，即享有免運費優惠。</li></a>
+                      <a href="#"><li><span class="ico-car"></span><span class="text-red text-bold text-md">宅配貨到付款</span><br>將酌收110元運費。<br>若單筆購物滿490元，即享有免運費優惠（「貨到付款」服務僅限台灣本島）</li></a>
+                      <li class="text-center"><a href="#" class="btn brd-red"><span class="ico-arrow"></span>詳細說明</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                </div>
+                <div class="nav-hor delivery_method">
+                <ul>
+                  <li>出貨方式<span class="ico-add"></span>
+                    <ul class="nav-hor-sub">
+                      <a href="#"><li><span class="ico-store"></span><span class="text-red text-bold text-md">超商取貨付款</span><br>全家、萊爾富、OK取貨付款，將酌收60元運費。若單筆購物滿 490 元，即享有免運費優惠。</li></a>
+                      <a href="#"><li><span class="ico-box"></span><span class="text-red text-bold text-md">宅配到府</span><br>將酌收80元物運費。若單筆購物滿 490 元，即享有免運費優惠。</li></a>
+                      <a href="#"><li><span class="ico-car"></span><span class="text-red text-bold text-md">宅配貨到付款</span><br>將酌收110元運費。<br>若單筆購物滿490元，即享有免運費優惠（「貨到付款」服務僅限台灣本島）</li></a>
+                      <li class="text-center"><a href="#" class="btn brd-red"><span class="ico-arrow"></span>詳細說明</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                </div>
+                <hr>
+                <label class="text-bold">加價購</label>
+                <ul class="media-list">
+                  <li class="media">
+                    <div class="media-left">
+                      <img class="img-circle" src="images/slide-1.jpg" alt="">
+                    </div>
+                    <div class="media-body">
+                      <a href="#"><p>商品名稱如果太多的話就會換行... </p></a>
+                      <p class="text-red">+999元</p>
+                    </div>
+                    <div class="media-right">
+                      <input type="checkbox">
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <img class="img-circle" data-src="holder.js/60x60/auto" alt="">
+                    </div>
+                    <div class="media-body">
+                      <a href="#"><p>商品名稱</p></a>
+                      <p class="text-red">+999元</p>                      
+                    </div>
+                    <div class="media-right">
+                      <input type="checkbox">
+                    </div>
+                  </li>
+                </ul>
+                <label class="text-bold">加碼贈</label>
+                <ul class="media-list">
+                  <li class="media media-block">
+                    <div class="media-left">
+                      <img class="img-circle" data-src="holder.js/60x60/auto" alt="">
+                    </div>
+                    <div class="media-body">
+                      <a href="#"><p>商品名稱就是這麼長到<br>第二行這裡來了...</p></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!-- /.aside -->
+            </div><!-- /.col-md-3 -->
+          </div><!-- /.item-content -->
+
+          <div class="recommend col-md-12">
+            <div class="ico-rlt"><p class="hide-text">相關商品</p></div>
+            <div class="recommend-box">
+              <div class="item-recommend-loop">
+                <div>
+                  <a href="#">
+                  <div class="img">
+                    <img class="featurette-image" data-src="holder.js/135x135/auto" alt="">
+                  </div>
+                  <div class="title">商品名稱商品名稱商品名稱商品名稱</div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                  <div class="img">
+                    <img class="featurette-image" data-src="holder.js/135x135/auto" alt="">
+                  </div>
+                  <div class="title">商品名稱商品名稱商品名稱商品名稱</div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                  <div class="img">
+                    <img class="featurette-image" data-src="holder.js/135x135/auto" alt="">
+                  </div>
+                  <div class="title">商品名稱商品名稱商品名稱商品名稱</div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                  <div class="img">
+                    <img class="featurette-image" data-src="holder.js/135x135/auto" alt="">
+                  </div>
+                  <div class="title">商品名稱商品名稱商品名稱商品名稱</div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                  <div class="img">
+                    <img class="featurette-image" data-src="holder.js/135x135/auto" alt="">
+                  </div>
+                  <div class="title">商品名稱商品名稱商品名稱商品名稱</div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                  <div class="img">
+                    <img class="featurette-image" data-src="holder.js/135x135/auto" alt="">
+                  </div>
+                  <div class="title">商品名稱商品名稱商品名稱商品名稱</div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                  <div class="img">
+                    <img class="featurette-image" data-src="holder.js/135x135/auto" alt="">
+                  </div>
+                  <div class="title">商品名稱商品名稱商品名稱商品名稱</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.recommend -->
+        </div>
+      </div><!-- /.col-md-12 -->
+
+
+
+      <div class="scroll-top row"><a href="#"><span class="ico-top"></span></a></div>
+      <div class="footer">
+        <div class="container">
+          <div class="col-md-6 social">
+            <div class="col-md-12">
+              <div class="col-md-5 social-fb">
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2F%25E7%25BE%258E%25E5%259C%2596%25E6%2597%25A5%25E5%25A0%25B1%2F215949168559902&amp;width=&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=545795565524196" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:62px;" allowTransparency="true"></iframe>
+              </div>
+              <div class="col-md-7 social-other">
+                  <div class="social-goo">
+                  <!-- g+ -->
+                  <script src="https://apis.google.com/js/platform.js" async defer>
+                    {lang: 'zh-TW'}
+                  </script>
+                  <div class="g-plusone" data-size="medium" data-annotation="none" data-href="http://www.mess-book.com"></div>
+                  </div>
+                  <div class="social-weibo">
+                  <!-- weibo -->
+                  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+                  <wb:share-button addition="simple" type="button"></wb:share-button>
+                  </div>
+                  <div class="social-twitter">
+                  <!-- twitter -->
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  </div>
+                  <div class="ssl"><img src="images/ssl.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"><a href="#"><img class="featurette-image" data-src="holder.js/465x150/auto" alt=""></a></div>
+        </div>
+        <div class="bot2 col-md-12">
+          <h5><a href="store.html">實體銷售</a>　|　<a href="report.html">商品專利檢驗報告</a>　|　<a href="shop_rule.html">購物需知</a>　|　<a href="privacy_policy.html">隱私權聲明</a>　|　<a href="support_1.html">廠商合作</a>　|　<a href="career.html">人才招募</a></h5>
+          <p>Copyright &#169; 2014 lovebuy愛購資訊股份有限公司 ALL RIGHTS RESERVED</p>
+        </div>
+      </div><!-- /.footer -->
+
+      <div class="sideTag">
+        <ul>
+          <li class="tag-1"><a href="about.html"><p class="hide-text">關於愛購</p></a></li>
+          <li class="tag-2"><a href="video.html"><p class="hide-text">影片專區</p></a></li>
+          <li class="tag-3"><a href="faq.html"><p class="hide-text">FAQ</p></a></li>
+          <li class="tag-4"><a href="contact_1.html"><p class="hide-text">聯絡我們</p></a></li>
+          <li class="tag-5"><a href="edm.html"><p class="hide-text">電子報</p></a></li>
+        </ul>
+      </div><!-- /.sideTag -->
+
+    </div><!-- /.wrapper -->
+
+
+    <div class="adBnr">
+      <div><span class="Bnr-close"></span><a href="#" target="_blank"><img class="featurette-image" data-src="holder.js/87x250/auto" alt=""></a></div>
+    </div><!-- /.adBnr -->
+
+    <div class="overlay alert-addToList" style="display:none">
+      <div class="alert alert-default">
+        <h3>商品已成功加入我的清單了！</h3>
+        <!-- <h3>商品已成功加入購物車了！</h3> -->
+        <p><a href="#" class="btn btn-lg btn-dark alert-close"><span class="ico-close"></span>關閉</a></p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fs.selecter.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.zoom.js"></script>
+    <script type="text/javascript" src="js/docs.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $("#fancybox-manual-a").click(function() {
+            $.fancybox.open({
+              href : 'https://www.youtube.com/embed/9eD2UpdhbwA?autoplay=1',
+              type : 'iframe',
+              padding : 5
+            });
+          });
+          $("#fancybox-manual-b").click(function() {
+            $.fancybox.open({
+              href : 'https://www.youtube.com/embed/_zPBpvy4m1I?autoplay=1',
+              type : 'iframe',
+              padding : 5
+            });
+          });
+          $("#fancybox-manual-c").click(function() {
+            $.fancybox.open({
+              href : 'https://www.youtube.com/embed/8n1xVsRrvxk?autoplay=1',
+              type : 'iframe',
+              padding : 5
+            });
+          });
+          $(".zoom").zoom({ on:'click' });
+      });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      // All
+      $("select").not(".selecter_callback, .selecter_test").selecter();
+      // Callback
+      $("select.selecter_callback").selecter({
+          callback: selectCallback
+      });
+      // Disabled
+      $(".toggle_selecter").on("click", toggleEnabled);
+      if (!$(".selecter_disabled").is(":disabled")) {
+          $(".toggle_selecter").text("Disable");
+      } else {
+          $(".toggle_selecter").text("Enable");
+      }
+      // Disabled Option
+      $(".toggle_selecter_option").on("click", toggleEnabledOption);
+      if (!$(".selecter_disabled_option option").eq(0).is(":disabled")) {
+          $(".toggle_selecter_option").text("Disable Option 'One'");
+      } else {
+          $(".toggle_selecter_option").text("Enable Option 'One'");
+      }
+      $(window).one("pronto.load", function() {
+          $("select").selecter("destroy");
+          $(".toggle_selecter").off("click");
+          $(".toggle_selecter_option").off("click");
+      });
+    });
+
+    function selectCallback(value, index) {
+      $(".callback_output").prepend("<p>VALUE: " + value + ", INDEX: " + index + "</p>");
+    }
+
+    function toggleEnabled(e) {
+      e.preventDefault();
+      if ($(".selecter_disabled").is(":disabled")) {
+          $(".selecter_disabled").selecter("enable");
+          $(".toggle_selecter").text("Disable");
+      } else {
+          $(".selecter_disabled").selecter("disable");
+          $(".toggle_selecter").text("Enable");
+      }
+    }
+
+    function toggleEnabledOption(e) {
+      e.preventDefault();
+      if ($(".selecter_disabled_option option").eq(0).is(":disabled")) {
+          $(".selecter_disabled_option").selecter("enable", "1");
+          $(".toggle_selecter_option").text("Disable Option 'One'");
+      } else {
+          $(".selecter_disabled_option").selecter("disable", "1");
+          $(".toggle_selecter_option").text("Enable Option 'One'");
+      }
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/*
+* @data 2015-3-9
+* Author: Linda Lu
+*
+* E.SUN RWD Stylesheet
+--------------------------------
+   Base 共用設定
+--------------------------------
+*/
+
+/*-------- reset ----------*/
+html,body { height: 100%; }
+html, body, div, span, p, ul, li, input, table, thead, tr, th, td { margin: 0; padding: 0; }
+body { line-height: auto; font-size: 100%; font-weight: normal; font-family: '微軟正黑體', 'Microsoft JhengHei', 'Microsoft YaHei', Helvetica, Arial, sans-serif; word-wrap: break-word; -webkit-text-size-adjust: none; }
+a img, img { max-width: 100%; height:auto; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.boxsizing { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+
+
+/*-------- 共用其它設定 ----------*/
+.f-15 { font-size: 15px; line-height: 25px; }
+.w90pct { width: 90%; max-width: 1000px; margin: 0 auto; }
+.pv20 { padding-top: 20px; padding-bottom: 20px; }
+@media screen and (max-width: 960px) {
+	.w90pct { width: 95%; max-width: 100%; margin: 0 auto; }
+}
+@media screen and (max-width: 532px) {
+	.w90pct { width: 92%; max-width: 100%; margin: 0 auto; }
+}
+
+/*=====================================================
+   framework 天地
+=====================================================*/
+/* Header */
+#header ul { position: relative; max-width: 1000px; list-style-type: none; margin: 0 auto; }
+#header li { display: inline-block; }
+.logo { position: absolute; left: 0; width: 198px; height: 24px; background-image: url(../images/headerFooter/logoSmallSize.png); background-repeat: no-repeat; margin-top: 8px; cursor: pointer; }
+
+/* Footer */
+.contact { color: #464646; text-align: center; background: #f7f7f7; padding: 15px 0; }
+.contact li { font-size: 13px; line-height: 24px; letter-spacing: 0.06em; list-style-type: none; }
+.contact li i { color: #999; font-size: 12px; font-style: normal; padding: 0 5px; }
+.anchor { max-height: 47px; text-align: center; line-height: 24px; font-family: Arial,"微軟正黑體","Microsoft JhengHei","新細明體", sans-serif; padding-top: 16px; }
+.anchor li { display: inline-block; color: #fff; font-size: 13px; line-height: 20px; letter-spacing: 0.06em; font-family: Arial,"微軟正黑體","Microsoft JhengHei","新細明體", Tahoma, sans-serif; }
+.anchor li a { display: inline; color: #fff; font-weight: normal; text-decoration: none; cursor: pointer; }
+.anchor li:before { color: #30ABAF; content: "|"; padding: 0 5px 0 1px; }
+.anchor li.first:before { content: ""; padding: 0 5px 0 0; }
+
+/* Sticky Footer */
+#wrapper { position: relative; min-height: 100%; }
+#header { position: relative; height: auto; width: 100%; height: 40px; text-align: center; background: #fff url(../images/headerFooter/headerBg.png) repeat-x;	padding: 0; margin: 0 auto; box-sizing: border-box;	}
+#content { padding: 0 0 47px 0; }
+#footer { position: absolute; bottom: 0; left: 0; width: 100%; padding-bottom: 16px; background: url(../images/headerFooter/footerBg.jpg) repeat-y center bottom; }
+
+@media screen and (max-width: 1024px) {
+	.header ul { width: 95%; margin-left: 2.5%; }
+	.logo { margin-left: 15px; }
+}
+@media screen and (max-width: 532px) {
+	#content { padding: 0 0 79px 0; }
+	#footer { z-index: 99; }
+}

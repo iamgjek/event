@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="icon" href="images/favicon.jpg">
+      <title>index</title>
+      <meta name="description" content="">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fs.selecter.css">
+  </head>
+  <body class="index">
+    <div class="container">
+      <div class="header">
+        <div class="col-md-6 sign"><a href="#">Sign in</a> / <a href="#">Sign up</a></div>
+        <div class="col-md-6 drop">
+<!--           <select name="selecter_basic" class="selecter_basic">
+            <option>ENGLISH</option>
+            <option>繁體中文</option>
+            <option>简体中文</option>
+          </select> -->
+          <div class="dropdown pull-right">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Language
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">ENGLISH</a></li>
+              <li><a href="#">繁體中文</a></li>
+              <li><a href="#">简体中文</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h1 class="main-logo"><img src="images/logo.png" alt=""></h1>
+        <h3 class="main-logo-slogon"><img src="images/logo-slogon.png"></h3>
+        <ul>
+          <a href="#"><li class="section-1"><p class="hide-text">Top Medical Teams</p></li></a>
+          <a href="#"><li class="section-2"><p class="hide-text">BioTaiwan Highlights</p></li></a>
+          <a href="#"><li class="section-3"><p class="hide-text">Health Products</p></li></a>
+        </ul>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fs.selecter.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      // All
+      $("select").not(".selecter_callback, .selecter_test").selecter();
+      // Callback
+      $("select.selecter_callback").selecter({
+          callback: selectCallback
+      });
+      // Disabled
+      $(".toggle_selecter").on("click", toggleEnabled);
+      if (!$(".selecter_disabled").is(":disabled")) {
+          $(".toggle_selecter").text("Disable");
+      } else {
+          $(".toggle_selecter").text("Enable");
+      }
+      // Disabled Option
+      $(".toggle_selecter_option").on("click", toggleEnabledOption);
+      if (!$(".selecter_disabled_option option").eq(0).is(":disabled")) {
+          $(".toggle_selecter_option").text("Disable Option 'One'");
+      } else {
+          $(".toggle_selecter_option").text("Enable Option 'One'");
+      }
+      $(window).one("pronto.load", function() {
+          $("select").selecter("destroy");
+          $(".toggle_selecter").off("click");
+          $(".toggle_selecter_option").off("click");
+      });
+    });
+
+    function selectCallback(value, index) {
+      $(".callback_output").prepend("<p>VALUE: " + value + ", INDEX: " + index + "</p>");
+    }
+
+    function toggleEnabled(e) {
+      e.preventDefault();
+      if ($(".selecter_disabled").is(":disabled")) {
+          $(".selecter_disabled").selecter("enable");
+          $(".toggle_selecter").text("Disable");
+      } else {
+          $(".selecter_disabled").selecter("disable");
+          $(".toggle_selecter").text("Enable");
+      }
+    }
+
+    function toggleEnabledOption(e) {
+      e.preventDefault();
+      if ($(".selecter_disabled_option option").eq(0).is(":disabled")) {
+          $(".selecter_disabled_option").selecter("enable", "1");
+          $(".toggle_selecter_option").text("Disable Option 'One'");
+      } else {
+          $(".selecter_disabled_option").selecter("disable", "1");
+          $(".toggle_selecter_option").text("Enable Option 'One'");
+      }
+    }
+    </script>
+  </body>
+</html>

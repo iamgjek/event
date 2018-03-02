@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <link rel="icon" href="images/favicon.jpg">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fs.selecter.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+            $(".nav").localScroll();
+        });
+      </script>
+  </head>
+  <body>
+    <div class="container wrapper text-root">
+      <div class="header">
+        <div class="col-md-12">
+          <div class="logo col-md-4">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>單筆消費滿490免運費喔！</p>
+          </div><!-- /.logo -->
+
+          <div class="col-md-8 menba">
+            <ul>
+              <li><a href="member_signin.html"><span class="ico-arrow"></span>登入</a></li>
+              <li><a href="member_signup_1.html"><span class="ico-arrow"></span>加入會員</a></li>
+              <!-- 
+              <a href="#" class="active"><li><span class="ico-arrow"></span>登出</li></a>
+              <a href="member_center.html" class="active"><li><span class="ico-arrow"></span>會員專區</li></a>
+               -->
+              <li><a href="shop_cart.html" class="cart"><span class="ico-arrow"></span>購物車 (10)</a></li>
+              <li><input type="text" value="" placeholder="站內搜尋"><input type="submit" value=""></li>
+            </ul>
+          </div><!-- /.menba -->
+
+        </div>
+
+        <div class="cart-hover" style="display:none">
+          <div class="triangle-top"></div>
+          <div class="cart-content">
+            <table>
+              <tr>
+                <td>商品數量</td>
+                <td class="text-right text-form">999</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr>
+                <td>合計金額</td>
+                <td class="text-right text-form">$299,990</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr class="btn">
+                <td colspan="2" class="text-center"><button type="button" class="btn btn-dark"><span class="ico-cart"></span>前往結帳</button></td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- /.cart-hover -->
+
+      </div><!-- /.header -->
+
+      <div id="cssmenu">
+      <ul>
+         <li class="cate-1 cate"><a href="#"><p class="hide-text">清潔日用</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>家用清潔用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>掃把、拖把系列</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-2 cate"><a href="#"><p class="hide-text">品牌家電</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活家電</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>台熱牌系列</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>阿波羅保險箱</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>歐蘭特曬衣架</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-3 cate"><a href="#"><p class="hide-text">生活用品</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活雜貨專區</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-4 cate"><a href="#"><p class="hide-text">傢俱寢飾</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>客廳寢室家具</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-5 cate"><a href="#"><p class="hide-text">運動戶外</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>戶外用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>戶外旅行</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-6 cate"><a href="#"><p class="hide-text">居家收納</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>收納箱、袋、架</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>隨手貼、配件</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>無痕掛勾、配件</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-7 cate"><a href="#"><p class="hide-text">餐廚/衛浴</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>各類功能杯壺</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>廚房用品、器具</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>購物車、環保袋</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>刀具、砧板、刨削器</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-8 cate"><a href="#"><p class="hide-text">佈置/園藝</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>壁貼、窗貼</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-9 cate"><a href="#"><p class="hide-text">特賣專區</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>限時預購專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>清倉特賣專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>佰元有找專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>超值福利品區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>本月買一送一</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>加一元多一件</span></a></li>
+            </ul>
+         </li>
+      </ul>
+      </div><!-- /.cssmenu -->
+
+      <div class="col-md-12">
+        <div class="ttl">
+          <ol class="breadcrumb">
+            <li class="1st">
+              <a href="#">隱私權聲明</a>
+            </li>
+            <li class="home"><a href="index.html"><p class="hide-text">home</p></a></li>
+          </ol>
+        </div><!-- /.ttl -->
+        <div class="privacy bs-docs-container">
+          <div class="col-md-12">
+            <div class="col-md-3 sidebar bs-docs-sidebar">
+              <div class="nav-hor">
+                <ul class="nav">
+                  <li><a href="#section_1">適用範圍<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_2">個資保護<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_3">資料使用<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_4">保密與安全性<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_5">未成年保護<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_6">政策之修訂<span class="ico-arrow"></span></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-md-9 content">
+              <div class="panel bs-docs-section">
+                  <p class="text-bold pos-top-md">愛購資訊科技有限公司(以下稱「本公司」)<br>針對消費者與個人資料之蒐集和運用，中華民國「電腦處理個人資料保護法」及本隱私權保護聲明。<br>本公司十分重視您的隱私權保護，將依個人資料保護法及本隱私權政策蒐集、處理及利用您的個人資料，<br>並提供您對個人資料權利之行使與保護。<br>若您不同意本隱私權政策之全部或部分者，請您停止使用本網站服務。</p>
+                  <h1 id="section_1"><span class="ico-bubbles"></span>本隱私權政策適用之範圍</h1>
+                  <div class="panel-body">
+                    <p>請您再使用本網站服務前，確認您已審閱並同意本隱私權政策所列全部條款，<br>若您不同意全部或部分者，則請勿使用本網站服務。<br>本隱私權政策僅適用於本網站對您個人資料所為蒐集、處理與利用，<br>不及於其他非本公司所有或控制之其他公司或個人。<br>您可能經由本網站連結至第三人所經營之網站，各該網站所為之個人資料搜及係依其網站之隱私權政策規定處理，<br>與本公司無涉。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <h1 id="section_2"><span class="ico-bubbles"></span>個人資料保護法應告知事項</h1>
+                  <div class="panel-body special">
+                    <p>( 1 ) 蒐集機關名稱：愛購資訊科技有限公司</p>
+                    <p>( 2 ) 資料蒐集之目的：提供於本公司相關服務、行銷、客戶管理、其他與第三人合作之行銷推廣活動</p>
+                    <p>( 3 ) 個人資料類別：識類別(姓名、地址、聯絡電話、電子郵件信箱)、特徵類(性別、年齡)、其他(往來電子郵件、網站留言、APP、系統自動紀錄之軌跡資訊等)</p>
+                    <p>( 4 ) 個人資料利用期間：本網站對客戶購物有效期間及終止後六個月；若非本網站客戶則於該蒐集個人資料之目的消失後六個月。</p>
+                    <p>( 5 ) 個人資料利用對象：本公司及本公司委外之協力廠商(例如：提供物流、金流或活動贈品、展示品之廠商)；如為本公司與其他廠商共同蒐集者，將與該共同蒐集之活動中載明。</p>
+                    <p>( 6 ) 個人資料使用方式：依蒐集目的範圍及本隱私權政策進行利用。</p>
+                    <p>( 7 ) 行使個人資料權力方式：依個人資料保護法第3條，當事人就其個人資料依本法規定行使之下列權利，查詢或請求閱覽、請求製給複製本、請求補充或更正、請求停止蒐集、處理或利用、請求刪除。(您可書面郵寄至本公司的方式行使上開權利，本公司將於收悉您的請求後，盡速處理。)</p>
+                    <p>( 8 ) 個人資料選填說明：若本公司於蒐集個人資料，相關網頁或文件載明為填選者，僅為提供您使用本網站更佳體驗，不影響您使用本網站之權益。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <h1 id="section_3"><span class="ico-bubbles"></span>個人資料蒐集、處理及利用</h1>
+                  <div class="panel-body">
+                    <p>本公司可能透過其他社群服務軟體，於取得您的同意後，將部分本網站的資訊發佈於您的社群活動資訊頁面，若您部同意該等訊息之發佈，請您勿點選同意鍵，或於事後透過各該社群服務知會員機制移除該等資訊或拒絕本網站繼續發布相關訊息。若有任何問題，仍可與本公司聯絡，本公司將協助您確認、處理相關問題除依法應提供予司法、檢調機關、相關主管機關，或與本公司協力廠商為執行相關活動必要範圍之利用外，本公司將不會任意將您的個人資料提供予第三人。當本公司或本網站被其他第三者併購或收購資產，導致經營權轉換時，本公司於事前將箱關細節公告於本網站，且本公司所擁有支全部或部分使用者資訊亦可能在經營權轉換的狀況下移轉給第三人。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <h1 id="section_4"><span class="ico-bubbles"></span>保密與安全性</h1>
+                  <div class="panel-body">
+                    <p>本公司之員工，僅於其為您提供產品或服務之需求範圍內，對於您的個人資料得為有限之接觸。<br>為了保護您的帳戶及個人資料安全，請您不要任意將個人帳號、密碼提供予第三人或允許第三人以您的個人資料申請帳號、密碼，否則，相關責任由您自行負擔。若您的帳號、密碼有外洩之虞，請您立即更改密碼，或通知本公司暫停該帳號<br>(本公司可能會要求核對您的個人資料)。網際網路並不是一個安全的資訊傳輸環境，請您在使用本網站時，避免將敏感的個人資料提供予他人或在其他網站上公開揭露。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <div class="panel-heading">
+                    <h1 id="section_5"><span class="ico-bubbles"></span>未成年保護</h1>
+                  </div>
+                  <div class="panel-body">
+                    <p>本網站並非特別為未成年人/兒童設計，未成年人使用本網站時，若同意本網站蒐集、利用其他個人資訊時，應在法定代理人或監護人之同意下為之。<br>法定代理人或監護人得隨時請求本公司停止特定帳號及相關之個人資料之蒐集、處理及利用之行為。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <h1 id="section_6"><span class="ico-bubbles"></span>隱私權政策之修訂</h1>
+                  <div class="panel-body">
+                    <p>隱私權政策如經修改，本網站將以您所提供之電子郵件或簡訊通知您相關之重大變更，並於本網站公告。<br>若您不同意該等變更或修改，請停止繼續使用本網站服務，並依本隱私權政策規定通知本公司停止蒐集、處理及利用您的個人資料。<br>若您對以上本隱私權保護政策有任何問題，請直接與本公司聯繫。</p>
+                  </div>
+              </div><!-- /.panel -->
+            </div>
+          </div>
+        </div>
+      </div><!-- /.col-md-12 -->
+
+      <div class="scroll-top row"><a href="#"><span class="ico-top"></span></a></div>
+      <div class="footer">
+        <div class="container">
+          <div class="col-md-6 social">
+            <div class="col-md-12">
+              <div class="col-md-5 social-fb">
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2F%25E7%25BE%258E%25E5%259C%2596%25E6%2597%25A5%25E5%25A0%25B1%2F215949168559902&amp;width=&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=545795565524196" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:62px;" allowTransparency="true"></iframe>
+              </div>
+              <div class="col-md-7 social-other">
+                  <div class="social-goo">
+                  <!-- g+ -->
+                  <script src="https://apis.google.com/js/platform.js" async defer>
+                    {lang: 'zh-TW'}
+                  </script>
+                  <div class="g-plusone" data-size="medium" data-annotation="none" data-href="http://www.mess-book.com"></div>
+                  </div>
+                  <div class="social-weibo">
+                  <!-- weibo -->
+                  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+                  <wb:share-button addition="simple" type="button"></wb:share-button>
+                  </div>
+                  <div class="social-twitter">
+                  <!-- twitter -->
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  </div>
+                  <div class="ssl"><img src="images/ssl.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"><a href="#"><img class="featurette-image" data-src="holder.js/465x150/auto" alt=""></a></div>
+        </div>
+        <div class="bot2 col-md-12">
+          <h5><a href="store.html">實體銷售</a>　|　<a href="report.html">商品專利檢驗報告</a>　|　<a href="shop_rule.html">購物需知</a>　|　<a href="privacy_policy.html">隱私權聲明</a>　|　<a href="support_1.html">廠商合作</a>　|　<a href="career.html">人才招募</a></h5>
+          <p>Copyright &#169; 2014 lovebuy愛購資訊股份有限公司 ALL RIGHTS RESERVED</p>
+        </div>
+      </div><!-- /.footer -->
+
+      <div class="sideTag">
+        <ul>
+          <li class="tag-1"><a href="about.html"><p class="hide-text">關於愛購</p></a></li>
+          <li class="tag-2"><a href="video.html"><p class="hide-text">影片專區</p></a></li>
+          <li class="tag-3"><a href="faq.html"><p class="hide-text">FAQ</p></a></li>
+          <li class="tag-4"><a href="contact_1.html"><p class="hide-text">聯絡我們</p></a></li>
+          <li class="tag-5"><a href="edm.html"><p class="hide-text">電子報</p></a></li>
+        </ul>
+      </div><!-- /.sideTag -->
+
+    </div><!-- /.wrapper -->
+
+    <div class="adBnr">
+      <div><span class="Bnr-close"></span><a href="#" target="_blank"><img class="featurette-image" data-src="holder.js/87x250/auto" alt=""></a></div>
+    </div><!-- /.adBnr -->
+
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fs.selecter.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/docs.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+          if ($(this).scrollTop() > 400) {
+              $('.nav-hor').css('position','fixed');
+              $('.nav-hor').css('z-index','501');
+              $('.nav-hor').css('top','0px');
+              $('.panel').css('margin-left','228px');
+          } else {
+              $('.nav-hor').css('position','relative');
+              $('.panel').css('top','-200px');
+              $('.panel').css('margin-left','-10px');
+          }
+      });
+    </script>
+  </body>
+</html>

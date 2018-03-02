@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <link rel="icon" href="images/favicon.jpg">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fs.selecter.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+  </head>
+  <body>
+    <div class="container wrapper text-root">
+      <div class="header">
+        <div class="col-md-12">
+          <div class="logo col-md-4">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>單筆消費滿490免運費喔！</p>
+          </div><!-- /.logo -->
+
+          <div class="col-md-8 menba">
+            <ul>
+              <!-- <li><a href="member_signin.html"><span class="ico-arrow"></span>登入</a></li>
+              <li><a href="member_signup_1.html"><span class="ico-arrow"></span>加入會員</a></li> -->
+              
+              <a href="#" class="active"><li><span class="ico-arrow"></span>登出</li></a>
+              <a href="member_center.html" class="active"><li><span class="ico-arrow"></span>會員專區</li></a>
+              
+              <li><a href="shop_cart.html" class="cart"><span class="ico-arrow"></span>購物車 (10)</a></li>
+              <li><input type="text" value="" placeholder="站內搜尋"><input type="submit" value=""></li>
+            </ul>
+          </div><!-- /.menba -->
+
+        </div>
+
+        <div class="cart-hover" style="display:none">
+          <div class="triangle-top"></div>
+          <div class="cart-content">
+            <table>
+              <tr>
+                <td>商品數量</td>
+                <td class="text-right text-form">999</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr>
+                <td>合計金額</td>
+                <td class="text-right text-form">$299,990</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr class="btn">
+                <td colspan="2" class="text-center"><button type="button" class="btn btn-dark"><span class="ico-cart"></span>前往結帳</button></td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- /.cart-hover -->
+
+      </div><!-- /.header -->
+
+      <div id="cssmenu">
+      <ul>
+         <li class="cate-1 cate"><a href="#"><p class="hide-text">清潔日用</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>家用清潔用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>掃把、拖把系列</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-2 cate"><a href="#"><p class="hide-text">品牌家電</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活家電</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>台熱牌系列</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>阿波羅保險箱</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>歐蘭特曬衣架</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-3 cate"><a href="#"><p class="hide-text">生活用品</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活雜貨專區</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-4 cate"><a href="#"><p class="hide-text">傢俱寢飾</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>客廳寢室家具</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-5 cate"><a href="#"><p class="hide-text">運動戶外</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>戶外用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>戶外旅行</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-6 cate"><a href="#"><p class="hide-text">居家收納</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>收納箱、袋、架</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>隨手貼、配件</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>無痕掛勾、配件</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-7 cate"><a href="#"><p class="hide-text">餐廚/衛浴</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>各類功能杯壺</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>廚房用品、器具</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>購物車、環保袋</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>刀具、砧板、刨削器</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-8 cate"><a href="#"><p class="hide-text">佈置/園藝</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>壁貼、窗貼</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-9 cate"><a href="#"><p class="hide-text">特賣專區</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>限時預購專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>清倉特賣專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>佰元有找專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>超值福利品區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>本月買一送一</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>加一元多一件</span></a></li>
+            </ul>
+         </li>
+      </ul>
+      </div><!-- /.cssmenu -->
+
+      <div class="col-md-12">
+        <div class="ttl">
+          <ol class="breadcrumb">
+            <li class="1st">
+              <a href="member_center.html">會員專區</a>
+            </li>
+            <li class="active">訂單查詢</li>
+            <li class="home"><a href="index.html"><p class="hide-text">home</p></a></li>
+          </ol>
+        </div><!-- /.ttl -->
+        <div class="menba-center-wrap">
+          <div class="item-content col-md-12">
+            <p class="text-bold text-center pos-top-md pos-bottom-lg">會員 <span class="text-blue text-lg">李大明</span> 歡迎回來 / 您目前保有的紅利點數為 <span class="text-red">9999</span> 點 ( 即將到期紅利為 <span class="text-red">2016/01/01</span> )</p>
+            <hr>
+            <div class="menba-center">
+              <table>
+                <thead>
+                  <tr>
+                    <td>訂單編號</td>
+                    <td>商品名</td>
+                    <td>規格</td>
+                    <td>單價</td>
+                    <td>數量</td>
+                    <td>小計</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="4" class="brd-rt brd-bt">
+                      <a href="#"><p>H1302938475801</p></a>
+                      <p class="pos-bottom-md">訂單狀態：<span class="text-red">未付款</span></p>
+                    </td>
+                    <td class="brd-rt brd-bt"><p class="text-left">【快樂家】新一代拉拉蔬果調理器(出貨日：2015/01/02)</p></td>
+                    <td class="brd-rt brd-bt">綠色 單件組</td>
+                    <td class="brd-rt brd-bt">$999,999<br>(人民幣：999,999)</td>
+                    <td class="brd-rt brd-bt">999</td>
+                    <td class="brd-rt-w brd-bt">$999,999<br>(人民幣：999,999)</td>
+                  </tr>
+                  <tr>
+                    <td class="brd-rt brd-bt">
+                      <a href="#">
+                      <p class="text-left btn btn-gift">贈品</p>
+                      <p class="text-left">神奇萬用去塵膠</p>
+                      </a>
+                    </td>
+                    <td class="brd-rt brd-bt">單件組</td>
+                    <td class="brd-rt brd-bt">$1<br>(人民幣：1)</td>
+                    <td class="brd-rt brd-bt">1</td>
+                    <td class="brd-rt-w brd-bt">$1<br>(人民幣：1)</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="brd-bt">
+                        <p class="text-right"><span class="text-bold">商品數量合計</span></p>
+                        <p class="text-right"><span class="text-bold">本次使用紅利</span></p>
+                        <p class="text-right"><span class="text-bold">折扣合計</span></p>
+                        <p class="text-right"><span class="text-bold">運費</span></p>
+                        <p class="text-right"><span class="text-bold">可獲得紅利點數</span></p>
+                    </td>
+                    <td colspan="2" class="brd-bt">
+                        <p class="text-right pos-right-sm">1 <span class="text-bold">件</span></p>
+                        <p class="text-right pos-right-sm">- 0 <span class="text-bold">點</span></p>
+                        <p class="text-right pos-right-sm">- 0 <span class="text-bold">元</span></p>
+                        <p class="text-right pos-right-sm">60 <span class="text-bold">元</span></p>
+                        <p class="text-right pos-right-sm">+ 15 <span class="text-bold">點</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <p class="text-right"><span class="text-bold">本次訂購總計</span></p>
+                    </td>
+                    <td colspan="2">
+                      <p class="text-right pos-right-sm text-bold"><span class="text-red">6,701 </span>元</p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2" class="brd-tp">
+                      <p class="text-bold">收件人資訊：</p>
+                      <p>李大明<br>customer@gmail.com<br>0987654321<br>0278172637<br>10010 台北市松山區松山路100號8喽</p>
+                    </td>
+                    <td colspan="4" class="brd-tp">
+                      <p class="text-bold">支付方式：</p>
+                      <p>「信用卡」</p>
+                      <p class="text-bold">訂購日期：</p>
+                      <p>2015/02/01</p>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="item-pager pager pos-top-lg pos-bottom-md">
+              <a href="#" class="btn btn-lg btn-red pos-right-md"><span class="ico-check"></span>確定退貨</a>
+              <a href="member_center.html" class="btn btn-lg btn-dark"><span class="ico-back"></span>回會員專區</a>
+            </div><!-- /.item-pager -->
+          </div><!-- /.item-content -->
+
+        </div><!-- /.menba-center -->
+      </div><!-- /.col-md-12 -->
+
+
+
+      <div class="scroll-top row"><a href="#"><span class="ico-top"></span></a></div>
+      <div class="footer">
+        <div class="container">
+          <div class="col-md-6 social">
+            <div class="col-md-12">
+              <div class="col-md-5 social-fb">
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2F%25E7%25BE%258E%25E5%259C%2596%25E6%2597%25A5%25E5%25A0%25B1%2F215949168559902&amp;width=&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=545795565524196" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:62px;" allowTransparency="true"></iframe>
+              </div>
+              <div class="col-md-7 social-other">
+                  <div class="social-goo">
+                  <!-- g+ -->
+                  <script src="https://apis.google.com/js/platform.js" async defer>
+                    {lang: 'zh-TW'}
+                  </script>
+                  <div class="g-plusone" data-size="medium" data-annotation="none" data-href="http://www.mess-book.com"></div>
+                  </div>
+                  <div class="social-weibo">
+                  <!-- weibo -->
+                  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+                  <wb:share-button addition="simple" type="button"></wb:share-button>
+                  </div>
+                  <div class="social-twitter">
+                  <!-- twitter -->
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  </div>
+                  <div class="ssl"><img src="images/ssl.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"><a href="#"><img class="featurette-image" data-src="holder.js/465x150/auto" alt=""></a></div>
+        </div>
+        <div class="bot2 col-md-12">
+          <h5><a href="store.html">實體銷售</a>　|　<a href="report.html">商品專利檢驗報告</a>　|　<a href="shop_rule.html">購物需知</a>　|　<a href="privacy_policy.html">隱私權聲明</a>　|　<a href="support_1.html">廠商合作</a>　|　<a href="career.html">人才招募</a></h5>
+          <p>Copyright &#169; 2014 lovebuy愛購資訊股份有限公司 ALL RIGHTS RESERVED</p>
+        </div>
+      </div><!-- /.footer -->
+
+      <div class="sideTag">
+        <ul>
+          <li class="tag-1"><a href="about.html"><p class="hide-text">關於愛購</p></a></li>
+          <li class="tag-2"><a href="video.html"><p class="hide-text">影片專區</p></a></li>
+          <li class="tag-3"><a href="faq.html"><p class="hide-text">FAQ</p></a></li>
+          <li class="tag-4"><a href="contact_1.html"><p class="hide-text">聯絡我們</p></a></li>
+          <li class="tag-5"><a href="edm.html"><p class="hide-text">電子報</p></a></li>
+        </ul>
+      </div><!-- /.sideTag -->
+
+    </div><!-- /.wrapper -->
+
+
+    <div class="adBnr">
+      <div><span class="Bnr-close"></span><a href="#" target="_blank"><img class="featurette-image" data-src="holder.js/87x250/auto" alt=""></a></div>
+    </div><!-- /.adBnr -->
+
+    <div class="overlay alert-addToList" style="display:none">
+      <div class="alert alert-default">
+        <h3>商品已成功加入我的清單了！</h3>
+        <!-- <h3>商品已成功加入購物車了！</h3> -->
+        <p><a href="#" class="btn btn-lg btn-dark alert-close"><span class="ico-close"></span>關閉</a></p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fs.selecter.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/docs.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

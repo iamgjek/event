@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <link rel="icon" href="images/favicon.jpg">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fs.selecter.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+            $(".nav").localScroll();
+        });
+      </script>
+  </head>
+  <body>
+    <div class="container wrapper text-root">
+      <div class="header">
+        <div class="col-md-12">
+          <div class="logo col-md-4">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <p>單筆消費滿490免運費喔！</p>
+          </div><!-- /.logo -->
+
+          <div class="col-md-8 menba">
+            <ul>
+              <li><a href="member_signin.html"><span class="ico-arrow"></span>登入</a></li>
+              <li><a href="member_signup_1.html"><span class="ico-arrow"></span>加入會員</a></li>
+              <!-- 
+              <a href="#" class="active"><li><span class="ico-arrow"></span>登出</li></a>
+              <a href="member_center.html" class="active"><li><span class="ico-arrow"></span>會員專區</li></a>
+               -->
+              <li><a href="shop_cart.html" class="cart"><span class="ico-arrow"></span>購物車 (10)</a></li>
+              <li><input type="text" value="" placeholder="站內搜尋"><input type="submit" value=""></li>
+            </ul>
+          </div><!-- /.menba -->
+
+        </div>
+
+        <div class="cart-hover" style="display:none">
+          <div class="triangle-top"></div>
+          <div class="cart-content">
+            <table>
+              <tr>
+                <td>商品數量</td>
+                <td class="text-right text-form">999</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr>
+                <td>合計金額</td>
+                <td class="text-right text-form">$299,990</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr></td>
+              </tr>
+              <tr class="btn">
+                <td colspan="2" class="text-center"><button type="button" class="btn btn-dark"><span class="ico-cart"></span>前往結帳</button></td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- /.cart-hover -->
+
+      </div><!-- /.header -->
+
+      <div id="cssmenu">
+      <ul>
+         <li class="cate-1 cate"><a href="#"><p class="hide-text">清潔日用</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>家用清潔用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>掃把、拖把系列</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-2 cate"><a href="#"><p class="hide-text">品牌家電</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活家電</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>台熱牌系列</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>阿波羅保險箱</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>歐蘭特曬衣架</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-3 cate"><a href="#"><p class="hide-text">生活用品</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>生活雜貨專區</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-4 cate"><a href="#"><p class="hide-text">傢俱寢飾</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>客廳寢室家具</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-5 cate"><a href="#"><p class="hide-text">運動戶外</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>戶外用品</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>戶外旅行</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-6 cate"><a href="#"><p class="hide-text">居家收納</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>收納箱、袋、架</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>隨手貼、配件</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>無痕掛勾、配件</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-7 cate"><a href="#"><p class="hide-text">餐廚/衛浴</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>各類功能杯壺</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>廚房用品、器具</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>購物車、環保袋</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>刀具、砧板、刨削器</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-8 cate"><a href="#"><p class="hide-text">佈置/園藝</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>壁貼、窗貼</span></a></li>
+            </ul>
+         </li>
+         <li class="cate-9 cate"><a href="#"><p class="hide-text">特賣專區</p></a>
+            <ul>
+               <li class="has-sub"><a href="products.html"><span>限時預購專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>清倉特賣專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>佰元有找專區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>超值福利品區</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>本月買一送一</span></a></li>
+               <li class="has-sub"><a href="products.html"><span>加一元多一件</span></a></li>
+            </ul>
+         </li>
+      </ul>
+      </div><!-- /.cssmenu -->
+
+      <div class="col-md-12">
+        <div class="ttl">
+          <ol class="breadcrumb">
+            <li class="1st">
+              <a href="#">常見問題 FAQ</a>
+            </li>
+            <li class="home"><a href="index.html"><p class="hide-text">home</p></a></li>
+          </ol>
+        </div><!-- /.ttl -->
+        <div class="faq bs-docs-container">
+          <div class="col-md-12">
+            <div class="col-md-3 sidebar bs-docs-sidebar">
+              <div class="nav-hor">
+                <ul class="nav">
+                  <li><a href="#section_1">會員常見問題<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_2">購物常見問題<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_3">配送取件問題<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_4">門市取件問題<span class="ico-arrow"></span></a></li>
+                  <li><a href="#section_5">退貨事宜問題<span class="ico-arrow"></span></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-md-9 content">
+              <div class="panel bs-docs-section">
+                  <h1 id="section_1"><span class="ico-person"></span> 會員常見問題</h1>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>如何進行購物？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span>
+                    <p>非會員：<br>您可先將欲購買的商品放進購物車然後前往結帳，頁面右邊即會顯示「首次購物」<br>認證您的EMAIL並填妥訂購人、收件人資訊及付款方式...等資訊後即完成訂購！訂單成立後，系統將會自動為您加入會員哦！</p>
+                    <p>已是會員：<br>先將欲購買的商品放進購物車開始結帳，頁面左邊即會顯示「會員登入」<br>登入後並填妥訂購人、收件人資訊及付款方式...等資訊後即完成訂購！</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>會員帳號是什麼？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>即為您在本站所註冊的電子信箱帳號。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>忘記密碼怎麼辦？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>點選頁面最上方的「登入」。點選「忘記密碼」並輸入您所註冊的電子信箱帳號後送出，系統將會自動發送一封「密碼確認信」至您的電子信箱，請妥善保管以便於日後查詢。<br>若超過10分鐘均未收到「密碼確認信」，或許是進到了垃圾信件匣內。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>忘記電子信箱無法登入怎麼辦？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>由於電子信箱即為您的會員帳號，是無法修改的。在您完成第一次購物或加入會員後系統亦發送一封「會員確認信」至您的電子信箱，請藉由該確認信查詢您的信箱帳號，或您可透過「<a href="contact_1.html">聯絡我們</a>」詢問本站客服中心。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>如何修改個人資料及密碼？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>登入會員後點選頁面最上方的「會員專區」，進入後點選「會員資訊 > 修改」即可進行修改。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>訂閱&取消訂閱電子報</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>訂閱：登入會員後點選右側的【電子報】頁籤進入並填寫您的電子信箱帳號即可。<br>取消訂閱：登入會員後點選頁面最上方的「會員專區」，進入後點選「會員資訊 > 修改」即可進行取消。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <h1 id="section_2"><span class="ico-shop"></span> 購物常見問題</h1>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>如何進行購物？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>非會員：<br>選擇商品 > 放入購物車 > 進入購物車 > 前往結帳 > 第一次購物註冊電子信箱 > 填妥訂購人、收件人資訊及付款方式 > 完成購物(自動加入會員)<br>已是會員：<br>選擇商品 > 放入購物車 > 進入購物車 > 前往結帳 > 登入會員 > 填妥收件人資訊及付款方式 > 完成購物</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>本站提供哪些付款方式？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span>
+                    <ol>
+                      <li>『超商取貨付款』包括：全家、萊爾富、OK。<br>選擇『超商取貨付款』將在您確認完訂購資訊無誤後進入超商、門市的選擇。您可在「會員專區 > 訂單查詢」內確認該筆訂單資訊。</li>
+                      <li>『超商付款不取貨』宅配到府。付款超商：全家、萊爾富、OK、7-11。<br>選擇『超商付款不取貨』將在您確認完訂購資訊無誤後進入超商的選擇並產生一組專屬的配送編號，依據此編號至您指定的超商進行付款您可在「會員專區 > 訂單查詢」內確認該筆訂單資訊。</li>
+                      <li>『ATM網路銀行轉帳』宅配到府。<br>選擇『ATM網路銀行轉帳』將在您完成訂購後產生一組專屬的轉帳帳號，依據此帳號至鄰近ATM或線上ATM進行付款。<br>
+                      您可在「會員專區 > 訂單查詢」內確認該筆訂單資訊。<br>
+                      ATM之操作方式可參考下述8步驟操作：
+                      <ol>
+                        <li>插入金融卡，輸入您的金融卡密碼</li>
+                        <li>選擇其它服務</li>
+                        <li>選擇跨行轉帳</li>
+                        <li>輸入行庫代號</li>
+                        <li>輸入專屬轉帳帳號</li>
+                        <li>輸入繳款金額</li>
+                        <li>檢查帳號及金額，若正確請按“正確”鍵，否則請按“更正”或“取消”鍵</li>
+                        <li>手續完成取回金融卡，並保留轉帳的收執聯</li>
+                      </ol>
+                      </li>
+                      <li>『信用卡』( 僅限於VISA、Master Card、JCB、銀聯卡之信用卡 )。<br>
+                      選擇『信用卡』將在您確認完訂購資訊無誤後進入刷卡頁面進行付款。您可在「會員專區 > 訂單查詢」內確認該筆訂單資訊。</li>
+                      <li>『宅配貨到付款』宅配到府。<br>
+                      選擇『宅配貨到付款』在您完成訂購後只需等待宅配業者將商品送到您手上再行付款即可。<br>
+                      您可在「會員專區 > 訂單查詢」內確認該筆訂單資訊。</li>
+                    </ol>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>如何查詢目前訂單的處理情況？ </h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>登入會員後點選頁面最上方的「會員專區」，進入後點選「訂單查詢 > 查詢」即可確認訂單的最新處理狀況。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>訂單成立後，是否可以取消、加訂、修改商品數量與尺寸，或是合併訂單免運費？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>訂單送出後無法接受修改，如狀態在未付款、待出貨時，可直接取消訂單。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>我想購買的商品已經缺貨，何時會進貨？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>可以在商品頁面點選「貨到通知我」後填寫您的聯絡資訊送出即可。待商品到貨時系統將主動通知您。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>訂閱&如何計算「十天鑑賞期」？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>根據消費者保護法之規定，提供您享有商品到貨的十日鑑賞期權益，是由消費者完成簽收取件的隔日起算至第10天止（如您的收件地址有管理員代收，則以代收的隔日起算喔，請留意送件通知），為十日鑑賞期限。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <h1 id="section_3"><span class="ico-delivery"></span> 配送取件問題</h1>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>運送範圍及寄件方式</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>限臺灣本島；目前配合物流_黑貓、新竹貨運、全速配、大榮貨運、超峰。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>運費如何計算？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span>
+                    <ol>
+                      <li>『超商取貨付款』包括：全家、萊爾富、OK，將酌收60元運費。</li>
+                      <li>『超商付款不取貨』宅配到府，將酌收60元運費。</li>
+                      <li>『ATM網路銀行轉帳』宅配到府，將酌收60元運費。</li>
+                      <li>『信用卡』宅配到府，將酌收80元運費。</li>
+                      <li>『宅配貨到付款』宅配到府，將酌收110元運費。（服務僅限台灣本島，部分商品無法使用宅配貨到付款）</li>
+                    </ol>
+                    <p>※ 以上方式若單筆購物滿 490 元，即享有免運費優惠。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>如何更改訂購內容、送貨地址或取消訂單？ </h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>修改訂單：<br>訂單送出後即無法修改訂單內容！<br>如需修改請登入會員後點選頁面最上方的「會員專區」，進入後點選「訂單查詢 > 查詢」並取消該筆訂單後再重新下單。<br>
+                    取消訂單：<br>
+                    訂單狀態尚未進入待出貨作業前您可登入會員後點選頁面最上方的「會員專區」，進入後點選「訂單查詢 > 查詢」取消該筆訂單。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>訂購商品後需幾天的時間才可以收到商品？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>商品約在確認款項後的2~3天送達。<br>訂單的最新狀態可在登入會員後點選頁面最上方的「會員專區」，進入後點選「訂單查詢 > 查詢」進行確認。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <h1 id="section_4"><span class="ico-receive"></span> 門市取件問題</h1>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>如何至門市取貨？沒有在領取的期限內取貨該怎麼辦？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>若您逾期未至門市取貨時，商品將會退回本公司，訂單亦將自動取消無法重新配送，如您仍需要該商品，請再次重新上網訂購。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>超賞取貨付款訂單可否修改配送門市&取貨時間？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>若您完成超商門市選取後，若非因門市自身暫停服務問題，將無法再變更門市，請您見諒！<br>如需修改請登入會員後點選頁面最上方的「會員專區」，進入後點選「訂單查詢 > 查詢」並取消該筆訂單後再重新下單並選擇正確的取件門市。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>未收到「貨到門市通知函」及簡訊？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>目前簡訊發送時間已調整為商品送達門市第二天，如於簡訊發送前已完成取件的會員，將不再重複發送取件通知。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>超商取貨如何辦理退貨？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>請先申請退貨，填寫詳細地址，我們將會委託貨運公司前往取件。<br>登入會員後點選頁面最上方的「會員專區」，進入後點選「訂單查詢 > 查詢」可針對該筆訂單進行申請退貨的手續。</p>
+                  </div>
+              </div><!-- /.panel -->
+              <div class="panel bs-docs-section">
+                  <h1 id="section_5"><span class="ico-return"></span> 退貨事宜問題</h1>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>什麼是「只退不換」的退貨方式？如何退回？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>為加速您收到正確商品的時間，對於不合適／瑕疵／錯誤商品的退換方式，調整為「只退不換」。<br>不合適／瑕疵／錯誤的商品，請您於鑑賞期十日內利用【退貨服務】直接辦理退貨，退貨運費將由我們為您負擔並委託貨運公司前往取件。<br>登入會員後點選頁面最上方的「會員專區」，進入後點選「訂單查詢 > 查詢」可針對該筆訂單進行申請退貨的手續。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>退款方式及退款時間？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span>
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>原付款方式</td>
+                          <td>退貨作業時間</td>
+                          <td>退款方式</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>超商取貨付款<br>超商付款不取貨<br>宅配貨到付款</td>
+                          <td rowspan="2">退貨包裏完成收件後</td>
+                          <td rowspan="2">請您填寫銀行／郵局帳戶資料，我們將會於10個工作日內，依您申請的帳戶資料完成退款。</td>
+                        </tr>
+                        <tr>
+                          <td>ATM網路銀行轉帳</td>
+                        </tr>
+                        <tr>
+                          <td>信用卡</td>
+                          <td></td>
+                          <td>退刷至原信用卡帳戶中由於完成退刷後，銀行間的作業處理約需7~14天，也因個人信用卡的結帳週期不同而影響退刷款項完成時間（負項可能會列在下期的帳單上）關於「店家已刷退後的作業時間」，可洽詢您的信用卡發卡行。</td>
+                        </tr>
+                      </tbody>
+                      <tfoot></tfoot>
+                    </table>
+                    <p>收到退款完成的通知信後，您可登入會員後點選頁面最上方的「會員專區」，進入後點選「訂單查詢 > 查詢」確認該筆訂單的最新狀況。</p>
+                    <ol class="text-red text-bold pos-top-md">※ 帳號填寫注意事項：
+                      <li>填寫退款帳號時請注意：提款卡卡號不一定等於存褶帳號，請以存褶帳號為準。</li>
+                      <li>一般銀行帳戶，請勿自行加入銀行代碼 ，帳號欄位請填寫存褶顯示之帳號即可，以免造成轉帳錯誤或失敗。</li>
+                      <li>中華郵政（代碼700） 帳戶，帳號則需填寫存簿之【局號】＋【帳號】。</li>
+                    </ol>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>發票遺失是否仍能辦理退換貨？ </h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>※ 如您購物時己索取發票，發票請連同退貨商品一併寄回，請務必妥善保存您的購物發票，以免影響您的退款進度。</p>
+                    <p>※ 如發票遺失，您可透過「<a href="contact_1.html">聯絡我們</a>」向客服人員索取【退貨折讓單】，並以A4紙將折讓單印出後，於紅框線處"簽名或蓋章"，連同退貨商品一併寄回。</p>
+                    <p>二聯式發票：請詳填購買人之姓名、身份證字號、地址（請小心填寫，如有塗改請重列印新書寫）。<br>
+                    三聯式發票：請加蓋公司發票章並填寫退貨金額後自行留存第三、四聯。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>我收到發票，但是統編有錯或漏開怎麼辦？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span><p>請在當月底前將原發票寄回本公司以便換開發票，並請清楚註明您欲開立之統編及抬頭及寄回地址即可。<br>愛購的地址與聯絡資訊可詳閱「<a href="about.html">關於愛購</a>」。</p>
+                  </div>
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><span class="ico-q"></span>什麼情況無法辦理退換貨？</h3>
+                  </div>
+                  <div class="panel-body">
+                    <span class="ico-a"></span>
+                    <ol>
+                      <li>超過十天鑑賞期。</li>
+                      <li>退回時，商品配件不全。</li>
+                      <li>商品有明顯使用痕跡、損壞或人為造成髒污、沾染粉妝，恕不接受退貨。</li>
+                      <li>個人貼身物品，一經拆除或包裝不完整，恕不接受退貨。</li>
+                      <li>已在商品上加工。</li>
+                      <li>活動贈品未退回。</li>
+                    </ol>
+                  </div>
+              </div><!-- /.panel -->
+            </div>
+          </div>
+        </div>
+      </div><!-- /.col-md-12 -->
+
+      <div class="scroll-top row"><a href="#"><span class="ico-top"></span></a></div>
+      <div class="footer">
+        <div class="container">
+          <div class="col-md-6 social">
+            <div class="col-md-12">
+              <div class="col-md-5 social-fb">
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2F%25E7%25BE%258E%25E5%259C%2596%25E6%2597%25A5%25E5%25A0%25B1%2F215949168559902&amp;width=&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=545795565524196" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:62px;" allowTransparency="true"></iframe>
+              </div>
+              <div class="col-md-7 social-other">
+                  <div class="social-goo">
+                  <!-- g+ -->
+                  <script src="https://apis.google.com/js/platform.js" async defer>
+                    {lang: 'zh-TW'}
+                  </script>
+                  <div class="g-plusone" data-size="medium" data-annotation="none" data-href="http://www.mess-book.com"></div>
+                  </div>
+                  <div class="social-weibo">
+                  <!-- weibo -->
+                  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+                  <wb:share-button addition="simple" type="button"></wb:share-button>
+                  </div>
+                  <div class="social-twitter">
+                  <!-- twitter -->
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  </div>
+                  <div class="ssl"><img src="images/ssl.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"><a href="#"><img class="featurette-image" data-src="holder.js/465x150/auto" alt=""></a></div>
+        </div>
+        <div class="bot2 col-md-12">
+          <h5><a href="store.html">實體銷售</a>　|　<a href="report.html">商品專利檢驗報告</a>　|　<a href="shop_rule.html">購物需知</a>　|　<a href="privacy_policy.html">隱私權聲明</a>　|　<a href="support_1.html">廠商合作</a>　|　<a href="career.html">人才招募</a></h5>
+          <p>Copyright &#169; 2014 lovebuy愛購資訊股份有限公司 ALL RIGHTS RESERVED</p>
+        </div>
+      </div><!-- /.footer -->
+
+      <div class="sideTag">
+        <ul>
+          <li class="tag-1"><a href="about.html"><p class="hide-text">關於愛購</p></a></li>
+          <li class="tag-2"><a href="video.html"><p class="hide-text">影片專區</p></a></li>
+          <li class="tag-3"><a href="faq.html"><p class="hide-text">FAQ</p></a></li>
+          <li class="tag-4"><a href="contact_1.html"><p class="hide-text">聯絡我們</p></a></li>
+          <li class="tag-5"><a href="edm.html"><p class="hide-text">電子報</p></a></li>
+        </ul>
+      </div><!-- /.sideTag -->
+
+    </div><!-- /.wrapper -->
+
+    <div class="adBnr">
+      <div><span class="Bnr-close"></span><a href="#" target="_blank"><img class="featurette-image" data-src="holder.js/87x250/auto" alt=""></a></div>
+    </div><!-- /.adBnr -->
+
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fs.selecter.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/docs.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+          if ($(this).scrollTop() > 400) {
+              $('.nav-hor').css('position','fixed');
+              $('.nav-hor').css('z-index','501');
+              $('.nav-hor').css('top','0px');
+              $('.panel').css('margin-left','228px');
+          } else {
+              $('.nav-hor').css('position','relative');
+              $('.panel').css('top','-200px');
+              $('.panel').css('margin-left','-10px');
+          }
+      });
+    </script>
+  </body>
+</html>
