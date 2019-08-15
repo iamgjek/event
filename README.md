@@ -6,4 +6,4 @@
 - [Responsive app demo](https://iamgjek.github.io/event/managepay/index.html)
 - [Payment app demo](https://iamgjek.github.io/event/payment/index.html)
 - [TFE anding page](https://iamgjek.github.io/event/TFE/secondary/index.html)
-- [TFE UI prototype](https://iamgjek.github.io//event/TFE/UI prototype/index.html#g=1)
+- [TFE UI prototype](https://iamgjek.github.io//event/TFE/UI_prototype/index.html#g=1)
