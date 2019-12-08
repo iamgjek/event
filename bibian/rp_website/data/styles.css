@@ -9,9 +9,14 @@
 }
 .box_1 {
 }
+.box_2 {
+}
 .image {
 }
 .button {
+}
+.link_button {
+  color:#169BD5;
 }
 .heading_1 {
   font-family:'ArialMT', 'Arial';
@@ -70,6 +75,8 @@
   text-align:left;
 }
 .flow_shape {
+}
+.connector {
 }
 .fontawesome {
 }
